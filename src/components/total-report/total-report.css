@@ -1,0 +1,35 @@
+.body{
+  display: grid;
+grid-template-columns: 0.8fr 1.4fr 0.6fr 0.8fr 0.8fr 1.2fr;
+padding: 20px;
+color: black;
+border-radius: 20px;
+column-gap: 20px;
+box-shadow: 6px 8px 10px black;
+background-color: white;
+}
+li{
+list-style: none;
+font-weight: bold;
+}
+.table{ 
+width: 70%;
+margin:auto;
+color: white;
+border-collapse: collapse;
+}
+@media screen and (max-width: 900px){
+  .body{
+    display: flex;
+  flex-direction: column;
+  width: 90%;
+  }
+  li{
+    padding: 10px;
+    text-align: center;
+  }
+  .table{
+  width: 90%;
+  margin: 20px;
+  }
+}

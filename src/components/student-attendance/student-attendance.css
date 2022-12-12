@@ -1,0 +1,81 @@
+.filter{
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+.bar{
+  width: 60%;
+  text-align: center;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: .5fr 2fr .5fr;
+  column-gap: 10px;
+  padding: 15px;
+  border-radius: 30px;
+background-color: black;
+}
+.element{
+  width: 100%;
+  height: auto;
+}
+.input{
+  width: 100%;
+  height: 35px;
+  border: inherit;
+  border-radius: 10px;
+  background-color: rgb(53, 49, 49);
+  color: white;
+}
+.content{
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+table{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: 6px 8px 10px black;
+}
+th,td{
+  padding: 10px;
+  border: 1px solid rgb(255, 255, 255);
+}
+th{
+  background-color: black;
+}
+td{
+  background-color: rgb(43, 41, 41);
+}
+.element3{
+  width: fit-content;
+  height: auto;
+  margin: 30px auto auto auto;
+
+}
+.submit{
+  width: 120px;
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(6, 31, 70);
+  cursor: pointer;
+}
+.attendance{
+  margin-left: 10px;
+}
+@media screen and (max-width: 900px){
+  .bar{
+    width: 80%;
+  }
+  table{
+    font-size: 13px;
+  }
+
+ }

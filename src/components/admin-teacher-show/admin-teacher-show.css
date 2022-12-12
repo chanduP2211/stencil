@@ -1,0 +1,75 @@
+.body{
+    display: grid;
+    grid-template-columns: .8fr 1fr 1.6fr 0.3fr 1fr 0.4fr 0.4fr 0.9fr 0.6fr ;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    column-gap: 20px;
+    box-shadow: 6px 8px 10px black;
+    background-color: white;
+  }
+  li{
+    list-style: none;
+  }
+  .table{
+    width: 85%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+.content{
+    text-align: center;
+    padding-top: 10%;
+    margin:auto;
+}
+.addbutton{
+    display: flex;
+    justify-content: flex-end;
+}
+.insert{
+    width: 70px;
+    height: auto;
+    border: none;
+    margin: auto 13% 1% auto;
+    padding: 5px;
+    background-color: blue;
+}
+.insert::before{
+    content: "+   insert";
+    float: left;
+    color: rgb(254, 254, 255);
+    font-size: 16px;
+  }
+  .delete,.update,.insert{
+    cursor: pointer;
+}
+.backGround{
+    height: 100vh;
+   background-image: linear-gradient(to right,rgb(1, 134, 90),white);
+  }
+@media screen and (max-width: 900px){
+    .insert::before{
+        font-size: 12px;
+    }
+   .backGround
+   {
+    overflow: scroll;
+   }
+    .body{
+        display: flex;
+     flex-direction: column;
+      width: 100%;
+      }
+      li{
+        padding: 10px;
+      }
+    .table{
+      width: 90%;
+      margin: 0px;
+    }
+    .content{
+        margin: 20% 5%;
+    }
+    .addbutton{
+     margin-bottom: 20px;
+    }
+}

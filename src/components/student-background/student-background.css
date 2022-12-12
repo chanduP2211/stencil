@@ -1,0 +1,62 @@
+.image{
+  margin:auto;
+height: 100vh;
+background-image: linear-gradient(to left,rgb(255, 255, 255),green);
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 15% auto auto 5%;
+}
+h1{
+  margin: auto;
+  text-shadow: 3px 3px 6px black;
+  font-style: oblique;
+  font-size: 45px;
+  padding: 10px;
+}
+.content{
+  color: red;
+  animation: text 3s linear  infinite ;
+}
+.welcome{
+  color: cyan;
+  animation: welcome 3s linear  infinite ;
+}
+@keyframes text{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.15);
+    color: cyan;
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes welcome{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.15);
+    color: rgb(255, 0, 0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 900px){
+  .heading{
+    margin: 55% auto auto auto;
+    padding-left: 30px;
+  }
+  .image{
+  z-index: -10;
+  }
+  h1{
+    font-size: 25px;
+  }
+}

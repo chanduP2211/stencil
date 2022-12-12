@@ -1,0 +1,76 @@
+.parent_ele{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 12px;
+    width: 50%;
+    height: auto;
+    margin:auto;
+    background-color: brown;
+    padding: 20px;
+    border-radius: 16px;
+}
+.parent{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 10% auto auto auto;
+}
+
+.ele{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+}
+input,textarea,select{
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 3px;
+    text-align: center;
+    border: rgba(255, 255, 255, 0);
+}
+textarea{
+    height: 40px;
+}
+.btn{
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+}
+button,.cancel{
+    padding: 10px 15px 10px 15px;
+    margin:auto 10px auto 10px;
+    background-color: rgb(74, 228, 74);
+    color: black;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.cancel{
+    background-color: red;
+    padding: 9px 14px;
+}
+ @media screen and (max-width: 900px){
+    .parent_ele{
+        width: 50%;
+       display: flex;
+       flex-direction: column;
+       margin: 30% auto auto auto;
+       padding: 5px;
+       font-size: 8px;
+    }
+    .ele{
+        padding: 12px;
+        width: 70%;
+    }
+    input,textarea,select{
+        font-size: 13px;
+    }
+    .parent{
+        margin: c c auto;
+    }
+ 
+}

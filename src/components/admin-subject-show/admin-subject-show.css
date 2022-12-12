@@ -1,0 +1,73 @@
+.body{
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.6fr;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  column-gap: 20px;
+  box-shadow: 6px 8px 10px black;
+  background-color: white;
+}
+li{
+  list-style: none;
+}
+.table{
+ display: block;
+  width: 40%;
+  margin: auto;
+}
+.host{
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.content{
+  text-align: center;
+  margin: 12% auto auto auto;
+  width: 100%;
+}
+.addbutton{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.insert{
+  width: 70px;
+  height: auto;
+  margin: auto 100px 10px auto;
+  padding: 5px;
+  background-color: blue;
+}
+.insert::before{
+  content: "+   insert";
+  font-size: 20px;
+  float: left;
+  color: rgb(254, 254, 255);
+}
+.delete,.update,.insert{
+  cursor: pointer;
+}
+.backGround{
+  height: 100vh;
+  background-image: linear-gradient(to right,rgb(1, 134, 90),white);
+}
+@media screen and (max-width: 900px){
+  .insert::before{
+      font-size: 16px;
+  }
+  .insert{
+    margin: 40% auto auto 60%;
+  }
+  .body{
+    display: flex;
+ flex-direction: column;
+  width: 90%;
+  }
+  li{
+    padding: 10px;
+  }
+.table{
+  width: 90%;
+  margin: 20px;
+}
+}

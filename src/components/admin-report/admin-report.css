@@ -1,0 +1,90 @@
+.element1{
+  text-align: center;
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr;
+  column-gap: 40px;
+  padding: 10px;
+  margin: auto;
+  width: 70%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 20px;
+
+}
+.background{
+height: 100%;
+width: 100vw;
+font-weight: bold;
+overflow-y: scroll;
+position: absolute;
+background-image: linear-gradient(to right,rgb(1, 134, 90),white);
+}
+.element{
+  margin: 10% auto auto auto;
+  width: 100%;
+  height: auto;
+}
+.element2{
+  text-align: center;
+  margin: 5% auto 2% auto;
+}
+.reportDate,.report,.date{
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  width: 60%;
+  border-radius: 20px;
+}
+.date{
+  margin-right: 10px;
+  float: right;
+}
+.reportDate{
+  background-color:springgreen;
+  float: left;
+}
+.report{
+  background-color: yellow;
+}
+.body{
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr 0.8fr 1.4fr 1.4fr 0.8fr;
+  padding: 10px;
+  color: black;
+  border-radius: 20px;
+  column-gap: 20px;
+  box-shadow: 6px 8px 10px black;
+  background-color: white;
+}
+li{
+  list-style: none;
+  padding: 10px;
+ text-transform: uppercase;
+
+}
+.table{
+  width: 75%;
+  margin:auto;
+  color: white;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 900px){
+.reportDate,.report,.date{
+  width: fit-content;
+  font-size: 10px;
+}
+.element1{
+   grid-template-columns: .5fr .5fr .5fr;
+   column-gap: 0px;
+   margin: 25% auto 1% auto;
+   width: 90%;
+ }
+.body{
+  display: flex;
+flex-direction: column;
+width: 90%;
+}
+.table{
+width: 90%;
+margin: 20px;
+}
+}

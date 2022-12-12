@@ -1,0 +1,13 @@
+.total{
+  padding: 10% 0px 20px 0px;
+  padding-bottom: 20px; 
+}
+.background{
+  height: 100%;
+  background-image: linear-gradient(to left,white,red);
+}
+@media screen and (max-width: 900px){
+.total{
+  padding-top: 30%;
+}
+}

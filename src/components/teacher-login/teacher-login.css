@@ -1,0 +1,81 @@
+.main{
+    display: grid;
+    grid-template-rows: auto;
+    margin:3% 20% auto 20%;
+    background-color: black;
+}
+.header{
+  margin: 20px auto 50px auto; 
+  color: white; 
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 15%;
+}
+.footer,.header{
+text-align: center;
+
+}
+.footer{
+    margin-top: 10%;
+}
+p{
+    color: red;
+    font-size: 14px;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+.section{
+   margin: auto 15%;
+}
+input,label{
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+}
+label{
+    font-weight: bold;
+    font-size: 17px;
+    color: white; 
+}
+button{
+    width: 120px;
+    height: auto;
+    padding: 15px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: blue;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+@media screen and (max-width: 900px){
+.head1,h1{
+    font-size: 13px;
+}
+input,label{
+    padding: 4px;
+    margin: 7px auto;
+}
+label{
+    font-size: 13px; 
+}
+button{
+    padding: 10px ;
+}
+.main{
+    margin:30% 20% auto 20%;
+}
+a{
+  font-size: 15px;
+  margin: 3px;
+}
+.header{
+    margin: 20px auto 20px auto; 
+    color: white; 
+  }
+}

@@ -1,0 +1,46 @@
+.background{
+  height: 100vh;
+  background-image: linear-gradient(to left,white,rgb(255, 0, 0));
+}
+.content{
+  margin: auto;
+  animation: box 1s ease-in-out  1 ;
+  padding-top: 10%;
+}
+.body{
+  width: 55%;
+  margin: auto;
+}
+ol{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 15px;
+  margin: 10px;
+}
+li{
+  list-style: none;
+  font-size: 20px;
+}
+@keyframes box {
+0%{
+   margin: auto auto auto -100%;
+   opacity: 0;
+}
+100%{
+    margin: auto auto auto 0%;
+    opacity: 1;
+}
+}  
+@media screen and (max-width: 900px){
+.body{
+    width: 100%;
+    margin: 20% auto;
+}
+li{
+    font-size: 15px;
+}
+}

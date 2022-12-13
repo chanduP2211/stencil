@@ -101,7 +101,7 @@ export class AdminTeacher {
     ) {
       this.valid = false;
       alert('Please Fill All Data');
-    } else if (!this.phone.value.match(/[6-9]{1}[0-9]{9}/)) {
+    } else if (!this.phone.value.match(/[6-9]{1}[0-9]{9}/)||this.phone.value.length>10) {
       alert('Enter Valid Number');
       this.valid = false;
     } else this.valid = true;

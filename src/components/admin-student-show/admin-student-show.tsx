@@ -101,7 +101,7 @@ export class StudentShow {
     );
   }
   goToForm() {
-    this.check = !this.check;
+    this.check = true;
   }
   async deleting(id) {
     await Data.api(`deleteStudent/${id}`, 'DELETE', '');

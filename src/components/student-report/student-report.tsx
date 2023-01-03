@@ -21,13 +21,18 @@ export class StudentReport {
     this.attendance = await Data.api('getAttendance', 'GET', '');
     this.id = sessionStorage.getItem('student_id');
     let detail = new Date();
-    let day = '';
-    if (detail.getDate() < 10) {
-      alert('hii');
+    let day:string = '';let month:string = ''
+    if (detail.getDate() < 10) 
       day = '0' + detail.getDate();
-    }
-    day += detail.getDate();
-    this.date = `${detail.getFullYear()}-${detail.getMonth() + 1}-${day}`;
+    else
+      day = detail.getDate().toString(); 
+    if(detail.getMonth()<10)
+      month = '0'+(detail.getMonth() + 1)
+    else
+      month = (detail.getMonth() + 1).toString()
+
+    this.date = `${detail.getFullYear()}-${month}-${day}`;
+
   }
 
   render() {
@@ -67,8 +72,8 @@ export class StudentReport {
                     <li>{element.rollNo}</li>
                     <li>{element.name}</li>
                     <li>{element.section}</li>
-                    <li>{element.subject}</li>
-                    <li>{element.attendance}</li>
+                    <li>SUBJECT:{element.subject}</li>
+                    <li>TODAY:{element.attendance}</li>
                     <li>{element.date}</li>
                   </ol>
                 );

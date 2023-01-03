@@ -46,8 +46,6 @@ export namespace Components {
     }
     interface AdminTeacherShow {
     }
-    interface GridCompo {
-    }
     interface LibeRouter {
     }
     interface MyComponent {
@@ -161,12 +159,6 @@ declare global {
     var HTMLAdminTeacherShowElement: {
         prototype: HTMLAdminTeacherShowElement;
         new (): HTMLAdminTeacherShowElement;
-    };
-    interface HTMLGridCompoElement extends Components.GridCompo, HTMLStencilElement {
-    }
-    var HTMLGridCompoElement: {
-        prototype: HTMLGridCompoElement;
-        new (): HTMLGridCompoElement;
     };
     interface HTMLLibeRouterElement extends Components.LibeRouter, HTMLStencilElement {
     }
@@ -282,7 +274,6 @@ declare global {
         "admin-subject-show": HTMLAdminSubjectShowElement;
         "admin-teacher": HTMLAdminTeacherElement;
         "admin-teacher-show": HTMLAdminTeacherShowElement;
-        "grid-compo": HTMLGridCompoElement;
         "libe-router": HTMLLibeRouterElement;
         "my-component": HTMLMyComponentElement;
         "student-attendance": HTMLStudentAttendanceElement;
@@ -343,8 +334,6 @@ declare namespace LocalJSX {
     }
     interface AdminTeacherShow {
     }
-    interface GridCompo {
-    }
     interface LibeRouter {
     }
     interface MyComponent {
@@ -403,7 +392,6 @@ declare namespace LocalJSX {
         "admin-subject-show": AdminSubjectShow;
         "admin-teacher": AdminTeacher;
         "admin-teacher-show": AdminTeacherShow;
-        "grid-compo": GridCompo;
         "libe-router": LibeRouter;
         "my-component": MyComponent;
         "student-attendance": StudentAttendance;
@@ -438,7 +426,6 @@ declare module "@stencil/core" {
             "admin-subject-show": LocalJSX.AdminSubjectShow & JSXBase.HTMLAttributes<HTMLAdminSubjectShowElement>;
             "admin-teacher": LocalJSX.AdminTeacher & JSXBase.HTMLAttributes<HTMLAdminTeacherElement>;
             "admin-teacher-show": LocalJSX.AdminTeacherShow & JSXBase.HTMLAttributes<HTMLAdminTeacherShowElement>;
-            "grid-compo": LocalJSX.GridCompo & JSXBase.HTMLAttributes<HTMLGridCompoElement>;
             "libe-router": LocalJSX.LibeRouter & JSXBase.HTMLAttributes<HTMLLibeRouterElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "student-attendance": LocalJSX.StudentAttendance & JSXBase.HTMLAttributes<HTMLStudentAttendanceElement>;

@@ -35,7 +35,7 @@ export class AdminLogin {
             <div class="form">
               <label htmlFor="username">USERNAME</label>
               <br />
-              <input type="email" ref={el => (this.username = el)} onInput={this.checkUsername.bind(this)} /> <br />
+              <input type="email" ref={el => (this.username = el)} onInput={(this.checkUsername.bind(this))} /> <br />
               {content1}
               <label htmlFor="password">PASSWORD</label>
               <br />
@@ -62,7 +62,7 @@ export class AdminLogin {
   }
   submiting(event: Event) {
     event.preventDefault();
-
+  // let user =  (this.el.shadowRoot.querySelector('input') as HTMLInputElement).value
     if (!this.test && !this.check && (this.username.value != '' || this.password.value != '')) {
       alert('You can Login');
       location.href = '/home';
@@ -71,7 +71,7 @@ export class AdminLogin {
   checkUsername(event: Event) {
     let username: string = (event.target as HTMLInputElement).value;
     this.admin.forEach(element => {
-      if (element.username != username) {
+      if (element.username != username || username === "") {
         this.check = true;
       } else {
         this.check = false;
@@ -81,7 +81,7 @@ export class AdminLogin {
   checkPassword(event: Event) {
     let password: string = (event.target as HTMLInputElement).value;
     this.admin.forEach(element => {
-      if (element.password != password) {
+      if (element.password != password || password === "") {
         this.test = true;
       } else {
         this.test = false;

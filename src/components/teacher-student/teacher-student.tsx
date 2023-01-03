@@ -3,8 +3,7 @@ import { Data } from '../stencil_api';
 
 @Component({
   tag: 'teacher-student',
-  styleUrl: 'teacher-student.css',
-  shadow: false,
+  styleUrl: 'teacher-student.css'
 })
 export class TeacherStudent {
 

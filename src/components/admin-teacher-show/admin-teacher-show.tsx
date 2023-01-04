@@ -107,9 +107,11 @@ export class AdminTeacherShow {
   }
 
   async deleting(id) {
+    if(confirm("Are You sure")){
     await Data.api(`deleteTeacher/${id}`, 'DELETE', '');
     await Data.api(`deleteLoginTeacher/${id}`, 'DELETE', '');
     location.reload();
+    }
   }
   goToForm() {
     this.check = !this.check;

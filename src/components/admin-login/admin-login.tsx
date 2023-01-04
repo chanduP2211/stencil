@@ -63,7 +63,7 @@ export class AdminLogin {
   submiting(event: Event) {
     event.preventDefault();
   // let user =  (this.el.shadowRoot.querySelector('input') as HTMLInputElement).value
-    if (!this.test && !this.check && (this.username.value != '' || this.password.value != '')) {
+    if (!this.test && !this.check && !(this.username.value == '' || this.password.value == '')) {
       alert('You can Login');
       location.href = '/home';
     } else alert('Inavalid Username or Password');
@@ -71,7 +71,7 @@ export class AdminLogin {
   checkUsername(event: Event) {
     let username: string = (event.target as HTMLInputElement).value;
     this.admin.forEach(element => {
-      if (element.username != username || username === "") {
+      if (element.username != username) {
         this.check = true;
       } else {
         this.check = false;
@@ -81,7 +81,7 @@ export class AdminLogin {
   checkPassword(event: Event) {
     let password: string = (event.target as HTMLInputElement).value;
     this.admin.forEach(element => {
-      if (element.password != password || password === "") {
+      if (element.password != password) {
         this.test = true;
       } else {
         this.test = false;

@@ -53,10 +53,6 @@ export class StudentLogin {
           <div>
             <a href="/student/signup">Change Password</a>
           </div>
-          <div class="navBar">
-            <a href="/">Admin</a>
-            <a href="/teacher/login">Teacher</a>
-          </div>
         </div>
       </div>
     );
@@ -65,7 +61,7 @@ export class StudentLogin {
     event.preventDefault();
     const username: HTMLInputElement = this.el.shadowRoot.querySelector('#username') as HTMLInputElement;
     const password: HTMLInputElement = this.el.shadowRoot.querySelector('#password') as HTMLInputElement;
-    if (!this.test && !this.check && (username.value != '' || password.value != '')) this.valid = true;
+    if (!this.test && !this.check && !(username.value == '' || password.value == '')) this.valid = true;
     else this.valid = false;
 
     if (this.valid) {

@@ -51,7 +51,6 @@ export class AdminReport {
               <input type="date" name="date" class="date" ref={el => (this.date = el)} />
             </div>
             <div class="ele">
-              {' '}
               <button onClick={this.reportByDate.bind(this)} class="reportDate">
                 REPORT BY DATE
               </button>

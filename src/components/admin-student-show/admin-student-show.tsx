@@ -104,9 +104,11 @@ export class StudentShow {
     this.check = true;
   }
   async deleting(id) {
+    if(confirm("Are You Sure")){
     await Data.api(`deleteStudent/${id}`, 'DELETE', '');
     await Data.api(`deleteLoginStudent/${id}`, 'DELETE', '');
     location.href = '/student/show';
+    }
   }
   updating(id) {
     this.stu_id = id;
